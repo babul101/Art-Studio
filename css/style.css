@@ -19,7 +19,7 @@
 body {
   font-family: Studio;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.25;
   background-color: #ffffff;
   color: #333333;
 }
@@ -59,10 +59,16 @@ figcaption {
   position: fixed;
   top: 70%;
   left: 50%;
+  width: 100%;
   color: white;
   transform: translate(-50%,-50%);
   pointer-events: none;
 }
+
+section.alternate figcaption {
+  color: #333333;
+}
+
 h1 {
   font-size: 120px;
 }
