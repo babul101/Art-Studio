@@ -18,6 +18,8 @@ section {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(120deg, #97ebd6, #9aa6f9);
+  position: sticky;
+  top: 0;
 }
 
 section.alternate {
@@ -26,4 +28,9 @@ section.alternate {
 
 section img {
   max-height: 100%;
+}
+
+
+section.in-view {
+ background-image: linear-gradient(90deg,red,yellow);
 }
