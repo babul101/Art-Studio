@@ -6,11 +6,11 @@
 @keyframes show {
   0% {
     opacity: 0;
-    transform: translate(0,24px) scale(0.95);
+    transform: translate(0, 24px) scale(0.95);
   }
   100% {
     opacity: 1;
-    transform: translate(0,0) scale(1);
+    transform: translate(0, 0) scale(1);
   }
 }
 
@@ -34,14 +34,15 @@ section {
 }
 
 section.alternate {
-    background-image: linear-gradient(30deg,#dc72ef,#fe0000);
+  background-image: linear-gradient(30deg, #dc72ef, #fe0000);
 }
 
 section img {
   max-height: 100%;
 }
 
-
-section.in-view img {
- animation: show 0.4s 0.4s both cubic-bezier(0.68,-0.55,0.27,1.55);;
+@media (prefers-reduced-motion: no-preference) {
+  section.in-view img {
+    animation: show 0.4s 0.4s both cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
 }
