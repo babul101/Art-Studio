@@ -15,4 +15,11 @@ const observer = new IntersectionObserver(entries => {
 
 sections.forEach(section => {
     observer.observe(section)
+
+    const div = section.querySelector('div')
+    document.addEventListener('mousemove',function(e){
+        const aimX = (e.pageX - (window.innerWidth/2))/20
+        const aimY = (e.pageY- (window.innerHeight/2))/-20
+        div.style.transform = `rotateX(${aimY}deg) rotateY(${aimX}deg)`
+    })
 })
