@@ -46,3 +46,20 @@ section img {
     animation: show 0.4s 0.4s both cubic-bezier(0.68, -0.55, 0.27, 1.55);
   }
 }
+
+@media (prefers-reduced-motion: no-preference) and (min-width: 900px) {
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+  main {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+
+  section {
+    scroll-snap-align: start;
+  }
+}
