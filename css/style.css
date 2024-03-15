@@ -84,6 +84,10 @@ p {
   font-size: 50px;
 }
 
+div.intro {
+  display: none;
+}
+
 /* section img {
   max-height: 100%;
 } */
@@ -91,6 +95,33 @@ p {
 @media (prefers-reduced-motion: no-preference) {
   section.in-view img {
     animation: show 2s 0.4s both cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  div.intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+  div.intro div.box {
+    width: 360px;
+    height: 200px;
+    border: 1px solid #9aa6f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+  }
+  div.intro div.column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
