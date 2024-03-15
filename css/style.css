@@ -84,6 +84,9 @@ figure {
 
 figure div {
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 figure img {
@@ -169,5 +172,15 @@ div.intro {
 
   section {
     scroll-snap-align: start;
+  }
+}
+
+@media (max-width:600px){
+  h1 {
+    font-size:50px ;
+    
+  }
+  p {
+    font-size:30px ;
   }
 }
